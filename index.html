@@ -1,275 +1,74 @@
-<!doctype html>
-<html lang="ja">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Summerhill ハロウィン 2025｜申込受付中</title>
-  <meta name="description" content="Summerhill International Schoolのハロウィンイベント。2025年10月25日（土）9:30–12:00開催。4〜12歳対象、英語が初めてでも安心。仮装ショーやTrick or Treat、工作など。先着30名・要申込。" />
-  <meta property="og:title" content="Summerhill ハロウィン 2025｜申込受付中" />
-  <meta property="og:description" content="10/25(土) 9:30–12:00＠元麻布。Halloween Words／工作／Trick or Treat／ファッションショー。英語初心者OK！" />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="images/ogp.png" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-  <meta name="twitter:card" content="summary_large_image" />
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Event",
-    "name": "Summerhill ハロウィン 2025",
-    "startDate": "2025-10-25T09:30:00+09:00",
-    "endDate": "2025-10-25T12:00:00+09:00",
-    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-    "eventStatus": "https://schema.org/EventScheduled",
-    "location": {
-      "@type": "Place",
-      "name": "Summerhill International School（Aoba-Japan International School）",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "元麻布2丁目13−8",
-        "addressLocality": "港区",
-        "postalCode": "106-0046",
-        "addressRegion": "東京都",
-        "addressCountry": "JP"
-      }
-    },
-    "image": ["images/ogp.png"],
-    "description": "4〜12歳対象。Halloween Words、工作、Trick or Treat、ファッションショーなど。英語が初めてでも日本語対応で安心。先着30名。",
-    "organizer": {
-      "@type": "Organization",
-      "name": "Summerhill International School（Aoba-Japan International School）",
-      "url": "https://example.com"
-    },
-    "offers": {
-      "@type": "AggregateOffer",
-      "priceCurrency": "JPY",
-      "lowPrice": "5400",
-      "highPrice": "7200",
-      "availability": "https://schema.org/InStock",
-      "url": "https://docs.google.com/forms/d/e/1FAIpQLSc04sBH5gyd1LDz5-Vf_5mTWtfbJml49vXOq0wP-eHfiPYaDA/viewform"
-    }
-  }
-  </script>
-
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    .spooky-gradient { background: radial-gradient(60% 100% at 50% 0%, #ff8a00 0%, #ff3d00 35%, #0b0b0f 70%, #0b0b0f 100%); }
-    .glass { backdrop-filter: blur(10px); background-color: rgba(255,255,255,0.08); }
-  </style>
-</head>
-<body class="bg-[#0b0b0f] text-white antialiased">
-  <header class="sticky top-0 z-50 bg-black/50 backdrop-blur border-b border-white/10">
-    <div class="mx-auto max-w-7xl px-4 py-3 flex items-center justify-between">
-      <a href="#top" class="font-semibold tracking-wide">🎃 <span class="sr-only">Home</span>Summerhill</a>
-      <nav class="hidden md:flex gap-6 text-sm">
-        <a href="#about" class="hover:opacity-80">概要</a>
-        <a href="#schedule" class="hover:opacity-80">タイムテーブル</a>
-        <a href="#gallery" class="hover:opacity-80">昨年の様子</a>
-        <a href="#venue" class="hover:opacity-80">会場</a>
-        <a href="#faq" class="hover:opacity-80">FAQ</a>
-      </nav>
-      <div class="flex items-center gap-3">
-        <a href="#register" class="rounded-2xl px-4 py-2 bg-orange-500 hover:bg-orange-600 transition">申し込む</a>
-      </div>
-    </div>
-  </header>
-
-  <section id="top" class="spooky-gradient relative overflow-hidden">
-    <div class="relative mx-auto max-w-7xl px-4 py-20 md:py-28 text-center">
-      <p class="uppercase tracking-[0.3em] text-white/80 text-xs md:text-sm">Summerhill International School</p>
-      <h1 class="mt-2 text-3xl md:text-6xl font-extrabold leading-tight">ハロウィン 2025<span class="ml-2 text-orange-300">｜Summerhill</span></h1>
-      <p class="mt-4 text-base md:text-lg text-white/80">2025年10月25日（土）9:30–12:00 / 東京都港区元麻布2丁目13−8</p>
-      <div class="mt-8 flex flex-wrap items-center justify-center gap-3">
-        <a href="#register" class="rounded-2xl px-6 py-3 bg-orange-500 hover:bg-orange-600 font-semibold">今すぐ申し込む</a>
-        <a href="#about" class="rounded-2xl px-6 py-3 border border-white/20 hover:bg-white/10">イベント概要</a>
-      </div>
-      <p class="mt-4 text-xs md:text-sm text-white/70">申込締切：10月17日（金）／ 先着30名（定員に達し次第締切）</p>
-    </div>
-  </section>
-
-  <section id="about" class="mx-auto max-w-7xl px-4 py-16">
-    <div class="grid md:grid-cols-2 gap-10 items-start">
-      <div>
-        <h2 class="text-2xl md:text-3xl font-bold">イベント概要</h2>
-        <p class="mt-4 text-white/80 leading-relaxed">今年も待ちに待ったハロウィンイベントを開催！先生やお友達と一緒に、Summerhillで英語を楽しく体験。<span class="font-semibold">Speaking × Creativity × Friendship</span>をテーマに、Halloween Words、工作、Trick or Treat、ファッションショーなど盛りだくさん。英語が初めてでも日本語対応スタッフがしっかりサポートします。</p>
-        <ul class="mt-6 space-y-2 text-white/80">
-          <li>・開催日時：2025年10月25日（土）9:30〜12:00</li>
-          <li>・会　　場：Summerhill International School（Aoba-Japan International School）</li>
-          <li>・住　　所：東京都港区元麻布2丁目13−8</li>
-          <li>・対　　象：4〜12歳（英語レベル不問）</li>
-          <li>・定　　員：先着30名（要・申込）</li>
-        </ul>
-      </div>
-      <div class="glass rounded-3xl p-5 border border-white/10">
-        <h3 class="font-semibold">主なアクティビティ</h3>
-        <div class="mt-4 grid grid-cols-2 gap-4">
-          <div class="rounded-2xl p-4 bg-white/5 border border-white/10">
-            <p class="text-lg">📚 Halloween Words</p>
-            <p class="text-sm text-white/70 mt-1">楽しく語彙を学ぼう</p>
-          </div>
-          <div class="rounded-2xl p-4 bg-white/5 border border-white/10">
-            <p class="text-lg">✂️ ハロウィン工作</p>
-            <p class="text-sm text-white/70 mt-1">創造性を育むクラフト</p>
-          </div>
-          <div class="rounded-2xl p-4 bg-white/5 border border-white/10">
-            <p class="text-lg">🍬 Trick or Treat</p>
-            <p class="text-sm text-white/70 mt-1">校内を回ってお菓子をゲット</p>
-          </div>
-          <div class="rounded-2xl p-4 bg-white/5 border border-white/10">
-            <p class="text-lg">👗 ファッションショー</p>
-            <p class="text-sm text-white/70 mt-1">自慢のコスチュームで舞台へ</p>
-          </div>
-        </div>
-        <p class="mt-4 text-xs text-white/60">＊内容は変更となる場合があります。</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="schedule" class="bg-white/5 border-y border-white/10">
-    <div class="mx-auto max-w-7xl px-4 py-16">
-      <h2 class="text-2xl md:text-3xl font-bold">タイムテーブル</h2>
-      <div class="mt-8 grid md:grid-cols-3 gap-6">
-        <div class="rounded-2xl p-5 bg-white/5 border border-white/10">
-          <p class="text-sm text-white/70">9:30</p>
-          <p class="font-semibold">オープニング & Halloween Words</p>
-          <p class="text-sm text-white/70 mt-1">自己紹介＆英語アクティビティ</p>
-        </div>
-        <div class="rounded-2xl p-5 bg-white/5 border border-white/10">
-          <p class="text-sm text-white/70">10:15</p>
-          <p class="font-semibold">ハロウィン工作 & Trick or Treat</p>
-          <p class="text-sm text-white/70 mt-1">校内を回ってお菓子をゲット</p>
-        </div>
-        <div class="rounded-2xl p-5 bg-white/5 border border-white/10">
-          <p class="text-sm text-white/70">11:30</p>
-          <p class="font-semibold">ファッションショー</p>
-          <p class="text-sm text-white/70 mt-1">表彰／クロージング 12:00</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="gallery" class="bg-white/5 border-y border-white/10">
-    <div class="mx-auto max-w-7xl px-4 py-16">
-      <h2 class="text-2xl md:text-3xl font-bold">昨年の様子</h2>
-      <div class="mt-6 grid grid-cols-2 md:grid-cols-4 gap-4">
-        <img class="rounded-2xl border border-white/10 object-cover w-full h-40" src="images/fashion1.jpg" alt="昨年の様子1"/>
-        <img class="rounded-2xl border border-white/10 object-cover w-full h-40" src="images/fashion2.jpg" alt="昨年の様子2"/>
-        <img class="rounded-2xl border border-white/10 object-cover w-full h-40" src="images/fashion3.jpg" alt="昨年の様子3"/>
-        <img class="rounded-2xl border border-white/10 object-cover w-full h-40" src="images/fashion4.jpg" alt="昨年の様子4"/>
-      </div>
-    </div>
-  </section>
-
-  <section id="register" class="mx-auto max-w-7xl px-4 py-16">
-    <div class="grid md:grid-cols-2 gap-10 items-start">
-      <div>
-        <h2 class="text-2xl md:text-3xl font-bold">お申し込み（先着30名）</h2>
-        <p class="mt-3 text-white/80">申込フォーム送信後、事務局からメールでご案内をお送りします。お支払いはPayPal経由のクレジットカード決済に対応しています。</p>
-        <div class="mt-4 overflow-hidden rounded-2xl border border-white/10">
-          <table class="w-full text-sm">
-            <thead class="bg-white/10"><tr><th class="text-left p-3">区分</th><th class="text-left p-3">参加費（税込）</th></tr></thead>
-            <tbody>
-              <tr class="border-t border-white/10"><td class="p-3">有料会員さま*2</td><td class="p-3 font-semibold">5,400円 / 名</td></tr>
-              <tr class="border-t border-white/10"><td class="p-3">無料会員さま*1</td><td class="p-3 font-semibold">7,200円 / 名</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <ul class="mt-3 text-xs text-white/70 space-y-1">
-          <li>*1：申込時点で有料コース未申込（休会中を含む）のお客さま。</li>
-          <li>*2：申込時点で有料コースにお申込み中のお客さま。</li>
-          <li>お支払い期限：請求書発行日から1週間／キャンセル：決済後100％</li>
-        </ul>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSc04sBH5gyd1LDz5-Vf_5mTWtfbJml49vXOq0wP-eHfiPYaDA/viewform" target="_blank" class="inline-block mt-6 rounded-2xl px-6 py-3 bg-orange-500 hover:bg-orange-600 font-semibold">申し込みフォームを開く</a>
-        <p class="mt-2 text-xs text-white/60">申込締切：2025年10月17日（金）／ 定員になり次第締切</p>
-      </div>
-      <div class="glass rounded-3xl p-6 border border-white/10">
-        <h3 class="font-semibold">当日のご案内</h3>
-        <ul class="mt-3 text-white/80 space-y-2 text-sm">
-          <li>・受付でお名前をお伝えください（親御さまの見学可）。</li>
-          <li>・持参物は締切後にメールでご案内します。</li>
-          <li>・イベントは英語で進行しますが、日本語サポート有。</li>
-        </ul>
-        <p class="mt-4 text-xs text-white/60">写真・動画は当社サイト／SNSに掲載予定です。お顔出しに関してはポリシーに基づき運用します。</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="venue" class="bg-white/5 border-y border-white/10">
-    <div class="mx-auto max-w-7xl px-4 py-16">
-      <h2 class="text-2xl md:text-3xl font-bold">会場アクセス</h2>
-      <div class="mt-6 grid md:grid-cols-2 gap-8 items-start">
-        <div class="glass rounded-3xl p-6 border border-white/10">
-          <p class="font-semibold">Summerhill International School（Aoba-Japan International School）</p>
-          <p class="text-white/80 text-sm mt-1">東京都港区元麻布2丁目13−8</p>
-          <ul class="text-white/70 text-sm mt-2 space-y-1">
-            <li>・最寄駅：麻布十番駅 徒歩圏</li>
-            <li>・駐車場：近隣コインパーキングをご利用ください</li>
-            <li>・バリアフリー対応：スタッフがサポートします</li>
-          </ul>
-          <a href="https://maps.app.goo.gl/" target="_blank" class="inline-block mt-4 rounded-xl px-4 py-2 bg-white/10 hover:bg-white/20 border border-white/10">Googleマップで開く</a>
-        </div>
-        <div class="aspect-video overflow-hidden rounded-3xl border border-white/10">
-          <iframe class="w-full h-full" src="https://www.google.com/maps/embed?pb=!1m18!..." loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map"></iframe>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="faq" class="mx-auto max-w-7xl px-4 py-16">
-    <h2 class="text-2xl md:text-3xl font-bold">よくある質問</h2>
-    <div class="mt-6 space-y-3">
-      <details class="group rounded-2xl border border-white/10 bg-white/5 p-4">
-        <summary class="cursor-pointer list-none flex items-center justify-between">
-          <span>英語が初めてでも大丈夫？</span>
-          <span class="transition group-open:rotate-45">＋</span>
-        </summary>
-        <p class="mt-3 text-sm text-white/80">日本語が話せるスタッフがサポートします。安心してご参加ください。</p>
-      </details>
-      <details class="group rounded-2xl border border-white/10 bg-white/5 p-4">
-        <summary class="cursor-pointer list-none flex items-center justify-between">
-          <span>支払い方法は？</span>
-          <span class="transition group-open:rotate-45">＋</span>
-        </summary>
-        <p class="mt-3 text-sm text-white/80">クレジットカード払い（PayPal経由）です。請求書をメールでお送りします。</p>
-      </details>
-      <details class="group rounded-2xl border border-white/10 bg-white/5 p-4">
-        <summary class="cursor-pointer list-none flex items-center justify-between">
-          <span>キャンセルはできますか？</span>
-          <span class="transition group-open:rotate-45">＋</span>
-        </summary>
-        <p class="mt-3 text-sm text-white/80">決済後のキャンセルは100％となります。ご了承ください。</p>
-      </details>
-      <details class="group rounded-2xl border border-white/10 bg-white/5 p-4">
-        <summary class="cursor-pointer list-none flex items-center justify-between">
-          <span>保護者の見学は可能？</span>
-          <span class="transition group-open:rotate-45">＋</span>
-        </summary>
-        <p class="mt-3 text-sm text-white/80">はい、見学可能です。混雑状況によって人数制限を行う場合があります。</p>
-      </details>
-    </div>
-  </section>
-
-  <footer class="border-t border-white/10">
-    <div class="mx-auto max-w-7xl px-4 py-10 grid md:grid-cols-3 gap-6 text-sm">
-      <div>
-        <p class="font-semibold">主催</p>
-        <p class="text-white/80 mt-1">Summerhill International School（Aoba-Japan International School）</p>
-      </div>
-      <div>
-        <p class="font-semibold">お問い合わせ</p>
-        <p class="text-white/80 mt-1">メール：<a class="underline" href="mailto:info@example.com">info@example.com</a></p>
-      </div>
-      <div>
-        <p class="font-semibold">SNS</p>
-        <div class="flex gap-3 mt-1">
-          <a href="#" class="underline">X</a>
-          <a href="#" class="underline">Instagram</a>
-          <a href="#" class="underline">Facebook</a>
-        </div>
-      </div>
-    </div>
-    <div class="text-center text-xs text-white/50 py-6">© 2025 Summerhill International School</div>
-  </footer>
-</body>
-</html>
+<!doctype html><html lang="ja"><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Hatchlink Jr. Halloween Party 2025｜申込受付中</title>
+<meta name="description" content="未就学児〜小学生対象。英語初心者OK＆会員でない方も大歓迎！Halloween Words、クラフト、Trick or Treat、コスチューム・ファッションショー。会場はSummerhill（国際学校の雰囲気も体験できます）。"/>
+<meta property="og:title" content="Hatchlink Jr. Halloween Party 2025"/>
+<meta property="og:description" content="未就学児〜小学生／英語初心者OK・会員以外も参加歓迎！10/25(土) 9:30–12:00 ＠元麻布（Summerhill）"/>
+<meta property="og:type" content="website"/><meta property="og:image" content="images/ogp.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+<style>:root{--hl-blue:rgb(0,190,230);--hl-green:rgb(0,160,80);--bg-dark:rgb(10,19,28);}
+body{background:var(--bg-dark);font-family:'Nunito',system-ui,-apple-system,sans-serif}.hero{background:linear-gradient(180deg,rgba(0,190,230,.25) 0%,rgba(0,160,80,.18) 100%),var(--bg-dark);}
+.btn-primary{background:var(--hl-blue)}.btn-primary:hover{filter:brightness(.95)}.btn-accent{background:var(--hl-green)}
+.card{backdrop-filter:blur(8px);background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.15)}.rounded-3xl{border-radius:1.25rem}</style>
+</head><body class="text-white antialiased">
+<header class="sticky top-0 z-50 bg-black/40 backdrop-blur"><div class="mx-auto max-w-7xl px-4 py-3 flex items-center justify-between">
+<div class="flex items-center gap-3"><img src="images/hatchlinkjr_logo.png" class="h-8 w-auto rounded-md bg-white/90 p-1" alt="Hatchlink Jr. ロゴ"><span class="font-extrabold tracking-wide" style="font-family:'Baloo 2',cursive;">Hatchlink Jr.</span></div>
+<nav class="hidden md:flex gap-6 text-sm"><a href="#about" class="hover:opacity-80">概要</a><a href="#schedule" class="hover:opacity-80">タイムテーブル</a><a href="#gallery" class="hover:opacity-80">昨年の様子</a><a href="#venue" class="hover:opacity-80">会場</a><a href="#faq" class="hover:opacity-80">FAQ</a></nav>
+<a href="#register" class="rounded-full px-4 py-2 btn-primary text-black font-bold">申し込む</a></div></header>
+<section class="hero relative overflow-hidden"><div class="relative mx-auto max-w-7xl px-4 py-16 md:py-20"><div class="grid md:grid-cols-2 gap-8 items-center">
+<div><h1 class="text-4xl md:text-6xl font-extrabold leading-tight" style="font-family:'Baloo 2',cursive;">Halloween Party 2025</h1>
+<p class="mt-3 text-lg">10/25(土) 9:30–12:00 ＠ 元麻布（Summerhill）</p>
+<p class="mt-2 text-white/80">会場はSummerhill International School。<br>ハッチリンクのイベントに参加しながら、<span class="font-extrabold">インターナショナルスクール体験</span>も味わえます！</p>
+<p class="mt-2 text-white/80">対象：<strong>未就学児〜小学生</strong>（英語初心者OK）／ <strong>会員でない方も参加歓迎！</strong></p>
+<div class="mt-6 flex flex-wrap gap-3"><a href="#register" class="rounded-full px-6 py-3 btn-primary text-black font-extrabold">今すぐ申し込む</a><a href="#about" class="rounded-full px-6 py-3 btn-accent text-black font-extrabold">イベント概要</a></div>
+<p class="mt-3 text-xs text-white/70">申込締切：10/17（金）／ 先着30名（定員に達し次第締切）</p></div>
+<div class="rounded-3xl overflow-hidden border border-white/10 bg-white/10"><img src="images/room1.jpg" class="w-full h-full object-cover" alt="イベントの様子"></div>
+</div></div></section>
+<section id="about" class="mx-auto max-w-7xl px-4 py-14"><div class="grid md:grid-cols-2 gap-10 items-start">
+<div class="space-y-4"><h2 class="text-3xl font-extrabold">イベント概要</h2>
+<p class="text-white/90">テーマは <span class="font-extrabold">Speaking × Creativity × Friendship</span>！Halloween Words、クラフト、Trick or Treat、ファッションショーなど英語を“遊びながら体験”。日本語対応スタッフがいるので、初めての英語でも安心です。</p>
+<ul class="text-white/90 space-y-2"><li>・開催日時：2025年10月25日（土）9:30〜12:00</li><li>・会　　場：Summerhill International School（Aoba-Japan International School）</li><li>・住　　所：東京都港区元麻布2丁目13−8</li><li>・対　　象：未就学児〜小学生（英語レベル不問）</li><li>・定　　員：先着30名（要・申込）</li></ul></div>
+<div class="card rounded-3xl p-5"><h3 class="font-bold">主なアクティビティ</h3>
+<div class="mt-4 grid grid-cols-2 gap-4 text-sm">
+<div class="rounded-2xl p-4 bg-white/10 border border-white/10"><p class="text-lg">📚 Halloween Words</p><p class="text-white/70 mt-1">語彙を楽しく学ぼう</p></div>
+<div class="rounded-2xl p-4 bg-white/10 border border-white/10"><p class="text-lg">✂️ クラフト</p><p class="text-white/70 mt-1">創造性を育む工作</p></div>
+<div class="rounded-2xl p-4 bg-white/10 border border-white/10"><p class="text-lg">🍬 Trick or Treat</p><p class="text-white/70 mt-1">合言葉でお菓子をゲット</p></div>
+<div class="rounded-2xl p-4 bg-white/10 border border-white/10"><p class="text-lg">👗 ファッションショー</p><p class="text-white/70 mt-1">自慢のコスチュームで舞台へ</p></div>
+</div><p class="mt-3 text-xs text-white/60">＊内容は変更となる場合があります。</p></div></div></section>
+<section id="schedule" class="border-y border-white/10"><div class="mx-auto max-w-7xl px-4 py-14"><h2 class="text-3xl font-extrabold">タイムテーブル</h2>
+<div class="mt-8 grid md:grid-cols-3 gap-6"><div class="rounded-2xl p-5 bg-white/10 border border-white/10"><p class="text-sm text-white/70">9:30</p><p class="font-bold">オープニング & Halloween Words</p><p class="text-sm text-white/70 mt-1">自己紹介＆英語アクティビティ</p></div>
+<div class="rounded-2xl p-5 bg-white/10 border border-white/10"><p class="text-sm text-white/70">10:15</p><p class="font-bold">クラフト & Trick or Treat</p><p class="text-sm text-white/70 mt-1">校内を回ってお菓子をゲット</p></div>
+<div class="rounded-2xl p-5 bg-white/10 border border-white/10"><p class="text-sm text-white/70">11:30</p><p class="font-bold">ファッションショー</p><p class="text-sm text-white/70 mt-1">表彰／クロージング 12:00</p></div></div></div></section>
+<section id="gallery" class="px-4 py-14 mx-auto max-w-7xl"><h2 class="text-3xl font-extrabold">昨年の様子</h2>
+<div class="mt-6 grid grid-cols-2 md:grid-cols-4 gap-4">
+<img src="images/room1.jpg" alt="昨年の様子1" class="rounded-2xl border border-white/10 object-cover w-full h-40">
+<img src="images/candy.jpg" alt="昨年の様子2" class="rounded-2xl border border-white/10 object-cover w-full h-40">
+<img src="images/circle.jpg" alt="昨年の様子3" class="rounded-2xl border border-white/10 object-cover w-full h-40">
+<img src="images/fashion1.jpg" alt="昨年の様子4" class="rounded-2xl border border-white/10 object-cover w-full h-40">
+</div></section>
+<section id="register" class="mx-auto max-w-7xl px-4 py-14"><div class="grid md:grid-cols-2 gap-10 items-start">
+<div><h2 class="text-3xl font-extrabold">お申し込み（先着30名）</h2>
+<p class="mt-3 text-white/90">申込フォーム送信後、事務局からメールでご案内をお送りします。お支払いはPayPal経由のクレジットカード決済に対応しています。</p>
+<div class="mt-4 overflow-hidden rounded-2xl border border-white/10"><table class="w-full text-sm"><thead class="bg-white/10"><tr><th class="text-left p-3">区分</th><th class="text-left p-3">参加費（税込）</th></tr></thead><tbody><tr class="border-t border-white/10"><td class="p-3">有料会員さま*2</td><td class="p-3 font-semibold">5,400円 / 名</td></tr><tr class="border-t border-white/10"><td class="p-3">無料会員さま*1</td><td class="p-3 font-semibold">7,200円 / 名</td></tr></tbody></table></div>
+<ul class="mt-3 text-xs text-white/70 space-y-1"><li>*1：申込時点で有料コース未申込（休会中を含む）のお客さま。</li><li>*2：申込時点で有料コースにお申込み中のお客さま。</li><li>お支払い期限：請求書発行日から1週間／キャンセル：決済後100％</li></ul>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSc04sBH5gyd1LDz5-Vf_5mTWtfbJml49vXOq0wP-eHfiPYaDA/viewform" target="_blank" class="inline-block mt-6 rounded-full px-6 py-3 btn-primary text-black font-extrabold">申し込みフォームを開く</a>
+<p class="mt-2 text-xs text-white/70">申込締切：2025年10月17日（金）／ 定員になり次第締切</p>
+<p class="mt-2 text-xs text-white/70">※ハッチリンクのレッスンを受けたことがない方、会員でない方も<span class="font-bold">参加可能</span>です！</p></div>
+<div class="card rounded-3xl p-6"><h3 class="font-bold">当日のご案内</h3>
+<ul class="mt-3 text-white/90 space-y-2 text-sm"><li>・受付でお名前をお伝えください（保護者の見学可）。</li><li>・持参物は締切後にメールでご案内します。</li><li>・イベントは英語で進行しますが、日本語サポートあり。</li></ul>
+<details class="mt-4 rounded-xl bg-white/10 p-3 border border-white/10"><summary class="cursor-pointer font-semibold">キャンセルはできますか？</summary><p class="mt-2 text-sm text-white/80">決済後のキャンセルは100％ご負担いただきます。生徒様のご都合による決済後のキャンセルや欠席につきましては、返金は致しかねますので、ご了承ください。</p></details></div>
+</div></section>
+<section id="venue" class="border-y border-white/10"><div class="mx-auto max-w-7xl px-4 py-14"><h2 class="text-3xl font-extrabold">会場アクセス</h2>
+<div class="mt-6 grid md:grid-cols-2 gap-8 items-start"><div class="card rounded-3xl p-6"><p class="font-bold">Summerhill International School（会場提供）</p><p class="text-white/80 text-sm mt-1">東京都港区元麻布2丁目13−8</p><a href="https://www.google.com/maps?safe=active&sca_esv=f487f9b98c0a2794&rlz=1C1QABZ_jaJP892JP1079&output=search&q=2-13-8+Moto-Azabu,+Minato-ku,+Tokyo+106-0046+Japan&source=lnms&fbs=AIIjpHzQki16q-8Z7j6aseYi2jA_b0BqCHbzMq_eZ7RGUBnJPMHPq18x1oiFLp05zEKXTFpzhf9uaz-0vg10Pw4Yy5fsRrFvpVjZfS7uLKGrWtWf7OSNZ4dracNFJM08XdYLwCZcwyt7vkDWfk0JDFQE9veoSKiQYir92GUwvJWreUVIxt6XrjOD2la7tsz25REaUXgYZFHYzEv48oiZf-_SCBlNOHK2AqXkFVVNRpCO8apXhDjpY0E&entry=mc&ved=1t:200715&ictx=111" target="_blank" class="inline-block mt-4 rounded-full px-4 py-2 btn-accent text-black font-extrabold">Googleマップで開く</a></div>
+<div class="rounded-3xl overflow-hidden border border-white/10"><img src="images/circle.jpg" alt="教室の雰囲気" class="w-full h-full object-cover"></div></div></div></section>
+<section id="faq" class="mx-auto max-w-7xl px-4 py-14"><h2 class="text-3xl font-extrabold">よくある質問</h2>
+<div class="mt-6 space-y-3"><details class="group rounded-2xl border border-white/10 bg-white/10 p-4"><summary class="cursor-pointer list-none flex items-center justify-between"><span>英語が初めてでも大丈夫？</span><span class="transition group-open:rotate-45">＋</span></summary><p class="mt-3 text-sm text-white/80">日本語が話せるスタッフがサポートします。安心してご参加ください。</p></details>
+<details class="group rounded-2xl border border-white/10 bg-white/10 p-4"><summary class="cursor-pointer list-none flex items-center justify-between"><span>保護者の見学は可能？</span><span class="transition group-open:rotate-45">＋</span></summary><p class="mt-3 text-sm text-white/80">はい、見学可能です。混雑状況によって人数制限を行う場合があります。</p></details></div></section>
+<footer class="border-t border-white/10"><div class="mx-auto max-w-7xl px-4 py-8 grid md:grid-cols-3 gap-6 text-sm">
+<div><p class="font-bold">主催</p><p class="text-white/90 mt-1">株式会社Aoba-BBT Global（ハッチリンク事務局）</p></div>
+<div><p class="font-bold">お問い合わせ</p><p class="text-white/90 mt-1">メール：<a class="underline" href="mailto:support@hatchlinkjr.com">support@hatchlinkjr.com</a></p></div>
+<div><p class="font-bold">備考</p><p class="text-white/80 mt-1">写真・動画は当社サイト等で掲載する場合があります。</p></div></div>
+<div class="text-center text-xs text-white/50 py-6">© 2025 Hatchlink Jr.</div></footer>
+</body></html>
