@@ -1,5 +1,9 @@
-# Hatchlink Jr. Halloween Party 2025 v4
+# Hatchlink Jr. Halloween Party 2025
 
-- 背景を白＋パステル柄に変更／吹き出しで『会員でない方も参加可能！』を強調
-- お写真にスタンプで匿名化済み（kids_pumpkins.jpg）
-- 申込締切：2025/10/21（火）・地図リンク更新済み
+このサイトはGitHub Pagesで公開するための1ページ構成サイトです。
+
+## 公開方法
+1. GitHubで新しいリポジトリを作成
+2. `index.html` と `images` フォルダをアップロード
+3. Settings > Pages > Branch: main / Folder: /(root) を設定
+4. `https://ユーザー名.github.io/リポジトリ名/` で確認
