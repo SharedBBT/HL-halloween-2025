@@ -1,3 +1,6 @@
-v12: 完全イラスト調の新バナー（hero_2025_v2.png）。ヘッダー右上の「申し込む」はGoogleフォームへ直リンク。
+# Summerhill ハロウィン 2025 ランディングページ（v17）
+- バナー高さを 2/3 程度に（潰れ防止・中央表示）
+- 会場表記から（Aoba-Japan International School）を削除
+- 昨年の様子：ご指定の2枚に差し替え
 
-v15: トップのバナーを最新版（承認済みデザイン）に差し替え。テキスト等には変更なし。
+GitHub Pages 公開：`index.html` と `images/` をアップロード→Settings > Pages で `main / (root)` を選択。
