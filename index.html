@@ -1,12 +1,13 @@
-<!DOCTYPE html><html lang="ja"><head>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Hatchlink Jr. Halloween Party 2025</title>
 <meta property="og:title" content="Hatchlink Jr. Halloween Party 2025">
 <meta property="og:type" content="website">
 <meta property="og:image" content="images/ogp.png">
-<meta property="og:url" content="https://sharedbbt.github.io/HL-halloween-2025/">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<meta property="og:url" content="">
 <style>
   :root{
     --blue:#00c4ff; --green:#00a060; --pumpkin:#ff8c00; --ink:#222; --muted:#6b7280;
@@ -15,41 +16,57 @@
   *{box-sizing:border-box}
   body{margin:0;background:var(--bg);font-family:system-ui,-apple-system,'Noto Sans JP',sans-serif;color:var(--ink)}
   .container{max-width:1200px;margin:auto;padding:18px 20px}
-  /* Header with right fixed CTA */
   .header{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}
   .brand{display:flex;align-items:center;font-weight:900;letter-spacing:.2px}
+  .brand img{height:38px}
+  .brand span{margin-left:10px}
   .cta-btn{display:inline-block;padding:.6em 1.1em;border-radius:999px;background:linear-gradient(90deg,var(--blue),var(--green));color:#003;text-decoration:none;font-weight:800;box-shadow:0 4px 12px rgba(0,0,0,.12)}
   .cta-btn:hover{filter:brightness(1.08)}
-  /* Wide Hero */
+
+  /* Wide Hero (横幅そのまま、縦を短く／歪みなし) */
   .hero{position:relative;border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:var(--shadow)}
-  .hero::before{content:'';display:block;aspect-ratio:16/6;min-height:180px}
-  .hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-  /* Info bubble */
+  .hero::before{content:'';display:block;aspect-ratio:16/4;min-height:150px;}
+  .hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 42%}
+
   .bubble{max-width:900px;margin:10px auto 18px;padding:12px 16px;background:#ffe7f3;border-left:6px solid #ff9ec8;border-radius:14px;text-align:center;font-weight:700;color:#7a2b4b}
   h1{font-size:clamp(28px,4.6vw,54px);margin:14px 0 4px;font-weight:900}
   .sub{color:var(--muted);margin:0 0 10px}
-  /* Grid layout */
+
   .row{display:grid;grid-template-columns:2fr 1fr;gap:18px;margin-top:10px}
   .card{border:1px solid var(--line);border-radius:16px;padding:16px;background:var(--card);box-shadow:var(--shadow)}
   .list{padding-left:1em}
   .list li{margin:.35em 0}
-  /* Timetable */
+
   .timeline{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
   .slot{border:1px solid var(--line);border-radius:14px;padding:12px 14px;background:#fcfdfd}
   .time{font-weight:900;color:#111;margin-bottom:6px}
+
+  /* Gallery */
+  .gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+  .gallery .photo{position:relative;border-radius:14px;overflow:hidden;border:1px solid var(--line)}
+  .gallery img{display:block;width:100%;height:160px;object-fit:cover}
+  .blur-spot{position:absolute;left:calc(var(--x) - var(--rx));top:calc(var(--y) - var(--ry));
+    width:calc(var(--rx)*2);height:calc(var(--ry)*2);border-radius:50% / 55%;
+    backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);pointer-events:none}
+
   /* Access */
   .access .btn{display:inline-flex;gap:8px;align-items:center;padding:.55em .9em;border-radius:10px;border:1px solid var(--line);text-decoration:none;background:#f6fbff;color:#0b63c9;font-weight:700}
   .access svg{width:18px;height:18px}
-  /* Gallery */
-  .gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
-  .gallery img{width:100%;height:160px;object-fit:cover;border-radius:14px;border:1px solid var(--line)}
-  @media(max-width:980px){.row{grid-template-columns:1fr} .timeline{grid-template-columns:1fr} .hero::before{aspect-ratio:16/7;min-height:200px}}
+
+  @media(max-width:980px){
+    .row{grid-template-columns:1fr}
+    .timeline{grid-template-columns:1fr}
+    .hero::before{aspect-ratio:16/5;min-height:180px;}
+  }
 </style>
 </head>
 <body>
   <div class="container">
     <div class="header">
-      <div class="brand"><img src="images/hl_logo.png" alt="Hatchlink Jr." style="height:38px;vertical-align:middle"><span style="margin-left:10px">Halloween Party 2025</span></div>
+      <div class="brand">
+        <img src="images/hl_logo.png" alt="Hatchlink Jr.">
+        <span>Halloween Party 2025</span>
+      </div>
       <a class="cta-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSc04sBH5gyd1LDz5-Vf_5mTWtfbJml49vXOq0wP-eHfiPYaDA/viewform" target="_blank" rel="noopener">申し込みフォーム</a>
     </div>
 
@@ -64,9 +81,14 @@
 
     <div class="row">
       <div class="card">
-        <h3>イベント概要</h3><p style="margin:8px 0 10px;line-height:1.6">テーマは<strong>Speaking × Creativity × Friendship！</strong><br>Halloween Words、クラフト、Trick or Treat、ハロウィンファッションショーなど、英語を「あそびながら」楽しく体験できます。日本語が話せるスタッフも常駐するので、英語が初めてのお子さまでも安心です。</p>
+        <h3>イベント概要</h3>
+        <p style="margin:8px 0 10px;line-height:1.6">
+          テーマは<strong>Speaking × Creativity × Friendship！</strong><br>
+          Halloween Words、クラフト、Trick or Treat、ハロウィンファッションショーなど、
+          英語を「あそびながら」楽しく体験できます。日本語が話せるスタッフも常駐するので、
+          英語が初めてのお子さまでも安心です。
+        </p>
         <ul class="list">
-          <li>テーマ：Speaking × Creativity × Friendship！</li>
           <li>日時：2025年10月25日（土）9:30〜12:00</li>
           <li>会場：Summerhill International School</li>
           <li>住所：東京都港区元麻布2丁目13−8</li>
@@ -105,7 +127,12 @@
     <section style="margin-top:16px">
       <h3>昨年の様子</h3>
       <div class="gallery">
-        <img src="images/gallery1.jpg" alt="gallery 1">
+        <!-- 1: 2人の写真（顔ぼかし済み：スポット調整可） -->
+        <div class="photo">
+          <img src="images/gallery1.jpg" alt="gallery 1">
+          <span class="blur-spot" style="--x:30%; --y:45%; --rx:13%; --ry:18%;"></span>
+          <span class="blur-spot" style="--x:58%; --y:42%; --rx:13%; --ry:19%;"></span>
+        </div>
         <img src="images/gallery2.jpg" alt="gallery 2">
         <img src="images/gallery3.jpg" alt="gallery 3">
         <img src="images/gallery4.jpg" alt="gallery 4">
@@ -130,4 +157,5 @@
 
     <footer style="text-align:center;color:var(--muted);margin:30px 0 10px">© Hatchlink Jr.</footer>
   </div>
-</body></html>
+</body>
+</html>
