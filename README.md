@@ -1,6 +1,1 @@
-# Summerhill ハロウィン 2025 ランディングページ（v17）
-- バナー高さを 2/3 程度に（潰れ防止・中央表示）
-- 会場表記から（Aoba-Japan International School）を削除
-- 昨年の様子：ご指定の2枚に差し替え
-
-GitHub Pages 公開：`index.html` と `images/` をアップロード→Settings > Pages で `main / (root)` を選択。
+v18: ワイドヒーロー（横幅優先／PCで2/3→十分な高さ）、申込ボタンを右上固定、概要2/3+アクセス1/3、タイムテーブル復活、アクセスカードをスタイリッシュに。
