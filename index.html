@@ -1,220 +1,138 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Hatchlink Jr. Halloween Party 2025｜申込受付中</title>
-<meta name="description" content="未就学児〜小学生対象。英語初心者OK＆どなたでも参加可能！Halloween Words、クラフト、Trick or Treat（おもちゃ配布）、コスチューム・ファッションショー。" />
-<meta property="og:image" content="images/ogp.png" />
-<script src="https://cdn.tailwindcss.com"></script>
-<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hatchlink Jr. Halloween Party 2025</title>
+<meta property="og:title" content="Hatchlink Jr. Halloween Party 2025">
+<meta property="og:image" content="images/hero.png">
 <style>
-:root{ --mint:#cdefe1; --pink:#ffe3ee; --orange:#ffe6cc; --text:#263238; --brand1:#00c4ff; --brand2:#00a060; }
-body{ color:var(--text); background:#fff; font-family:'Nunito',system-ui,-apple-system,sans-serif; }
-.pastel-bg{background-image:
-  radial-gradient(40px 40px at 15% 12%, var(--pink), transparent 60%),
-  radial-gradient(40px 40px at 80% 18%, var(--mint), transparent 60%),
-  radial-gradient(40px 40px at 30% 85%, var(--orange), transparent 60%);}
-.btn-primary{ background:linear-gradient(90deg,var(--brand1),var(--brand2)); color:#003; }
-.btn-accent{ background:#ffea80; color:#253b2f; }
-.rounded-3xl{ border-radius:1.25rem; }
-.card{ background:rgba(255,255,255,.9); border:1px solid rgba(0,0,0,.06);}
+:root{
+  --blue:#00c4ff; --green:#00a060; --pumpkin:#ff8c00; --ink:#222;
+  --muted:#6b7280; --line:#e7edf3; --card:#fff; --bg:#fff; --shadow:0 10px 22px rgba(0,0,0,.06);
+}
+*{box-sizing:border-box} body{margin:0;background:var(--bg);font-family:system-ui,-apple-system,'Noto Sans JP',sans-serif;color:var(--ink)}
+.container{max-width:1200px;margin:auto;padding:18px 20px}
+.header{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
+.brand{display:flex;align-items:center;font-weight:900}
+.brand img{height:40px} .brand span{margin-left:10px}
+.cta{padding:.6em 1.1em;border-radius:999px;background:linear-gradient(90deg,var(--blue),var(--green));color:#003;text-decoration:none;font-weight:800;box-shadow:0 4px 12px rgba(0,0,0,.12)}
+
+.hero{height:360px;border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:var(--shadow);background:#fff;margin-bottom:10px;text-align:center}
+.hero img{width:100%;height:100%;object-fit:cover;object-position:50% 45%}
+
+.bubble{max-width:920px;margin:8px auto 12px;padding:11px 14px;background:#ffe7f3;border-left:6px solid #ff9ec8;border-radius:14px;text-align:center;font-weight:700;color:#7a2b4b}
+
+h1{font-size:clamp(28px,4.6vw,54px);margin:14px 0 6px;font-weight:900}
+.sub{color:var(--muted);margin:0 0 12px}
+
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{border:1px solid var(--line);border-radius:16px;padding:16px;background:var(--card);box-shadow:var(--shadow)}
+.list{padding-left:1.1em} .list li{margin:.35em 0}
+
+.timeline{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.slot{border:1px solid var(--line);border-radius:14px;padding:12px;background:#fcfdfd}
+.time{font-weight:900;margin-bottom:6px}
+
+/* Gallery */
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.photo{position:relative;border-radius:14px;overflow:hidden;border:1px solid var(--line)}
+.photo img{display:block;width:100%;height:160px;object-fit:cover}
+/* 顔だけぼかすスポット（必要なら --x/--y/--rx/--ry を微調整） */
+.blur-spot{position:absolute;left:calc(var(--x) - var(--rx));top:calc(var(--y) - var(--ry));
+  width:calc(var(--rx)*2);height:calc(var(--ry)*2);border-radius:50% / 55%;
+  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);pointer-events:none}
+
+/* Responsive */
+@media(max-width:980px){
+  .hero{height:260px}
+  .grid{grid-template-columns:1fr}
+  .timeline{grid-template-columns:1fr}
+}
 </style>
 </head>
-<body class="pastel-bg">
-<header class="sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-black/5">
-  <div class="mx-auto max-w-7xl px-4 py-3 flex items-center justify-between">
-    <div class="flex items-center gap-3">
-      <img src="images/hatchlinkjr_logo.png" alt="Hatchlink Jr. ロゴ" class="h-10 w-auto" />
+<body>
+<div class="container">
+  <div class="header">
+    <div class="brand">
+      <img src="images/hl_logo.png" alt="Hatchlink Jr.">
+      <span>Halloween Party 2025</span>
     </div>
-    <nav class="hidden md:flex gap-6 text-sm text-slate-700">
-      <a href="#about">概要</a><a href="#schedule">タイムテーブル</a><a href="#gallery">昨年の様子</a><a href="#venue">会場</a><a href="#faq">FAQ</a>
-    </nav>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSc04sBH5gyd1LDz5-Vf_5mTWtfbJml49vXOq0wP-eHfiPYaDA/viewform" class="rounded-full px-4 py-2 btn-primary font-extrabold">申し込む</a>
+    <a class="cta" href="https://docs.google.com/forms/d/e/1FAIpQLSc04sBH5gyd1LDz5-Vf_5mTWtfbJml49vXOq0wP-eHfiPYaDA/viewform" target="_blank" rel="noopener">申し込みフォーム</a>
   </div>
-</header>
 
-<section class="relative">
-  <div class="relative mx-auto max-w-7xl px-4 py-10">
-    <div class="rounded-3xl overflow-hidden border border-black/10 bg-white">
-      <img src="images/hero_2025_final.png" alt="Halloween Party Banner" class="w-full h-auto object-contain mx-auto" />
+  <section class="hero"><img src="images/hero.png" alt="Banner"></section>
+  <div class="bubble">🎉 ※ ハッチリンクの有料会員でない方もどなたでも参加可能です！</div>
+
+  <h1>Hatchlink Jr. Halloween Party 2025</h1>
+  <p class="sub">10/25（土）9:30〜12:00　@ 麻布十番</p>
+
+  <div class="grid">
+    <div class="card">
+      <h3>イベント概要</h3>
+      <p style="margin:8px 0 10px;line-height:1.6">
+        テーマは<strong>Speaking × Creativity × Friendship！</strong><br>
+        Halloween Words、クラフト、Trick or Treat、ハロウィンファッションショーなど、
+        英語を「あそびながら」楽しく体験できます。日本語が話せるスタッフも常駐するので、
+        英語が初めてのお子さまでも安心です。
+      </p>
+      <ul class="list">
+        <li>日時：2025年10月25日（土）9:30〜12:00</li>
+        <li>会場：Summerhill International School</li>
+        <li>住所：東京都港区元麻布2丁目13−8</li>
+        <li>対象：未就学児〜小学生（英語レベル不問）</li>
+        <li>定員：先着30名（要・申込）</li>
+        <li>申込締切：2025年10月21日（火）</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>主なアクティビティ</h3>
+      <ul class="list">
+        <li>Halloween Words（語彙を楽しく学ぼう）</li>
+        <li>クラフト（創造性アップ）</li>
+        <li>Trick or Treat（合言葉でおもちゃゲット！）</li>
+        <li>ファッションショー（11:00 スタート）</li>
+      </ul>
+      <h4 style="margin:12px 0 6px">タイムテーブル</h4>
+      <div class="timeline">
+        <div class="slot"><div class="time">9:30</div>オープニング &amp; Halloween Words</div>
+        <div class="slot"><div class="time">10:15</div>クラフト &amp; Trick or Treat（おもちゃ配布）</div>
+        <div class="slot"><div class="time">11:00</div>ファッションショー ／ クロージング 12:00</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>会場アクセス</h3>
+      <p>Summerhill International School</p>
+      <p><a href="https://maps.app.goo.gl/fU6nV61ogNDmkYXw8" target="_blank" rel="noopener">Googleマップで開く</a></p>
+      <h3 style="margin-top:16px">参加費・お支払い</h3>
+      <ul class="list">
+        <li>無料会員様：7,200円 / 名（税込）</li>
+        <li>有料会員様：5,400円 / 名（税込）</li>
+        <li>お支払い方法：クレジットカード（請求書はPayPal経由でメール送付）</li>
+        <li>お支払い期限：請求書発行日から1週間</li>
+        <li>キャンセル規定：決済後のキャンセルは100％ご負担いただきます。</li>
+      </ul>
+      <p style="margin-top:8px">主催：株式会社 Aoba-BBT Global（ハッチリンク事務局） ｜ お問い合わせ：support@hatchlinkjr.com</p>
     </div>
   </div>
-</section>
 
-<!-- Notice bubble: non-members can join -->
-<div class="max-w-3xl mx-auto -mt-4 mb-8 p-4 bg-pink-100 border-l-4 border-pink-400 rounded-xl text-center shadow">
-  <p class="text-pink-800 font-semibold">
-    🎉 ※ ハッチリンクの有料会員でない方もどなたでも参加可能です！
-  </p>
+  <section style="margin-top:18px">
+    <h3>昨年の様子</h3>
+    <div class="gallery">
+      <div class="photo"><img src="images/gallery1.jpg" alt="1"><span class="blur-spot" style="--x:50%;--y:46%;--rx:14%;--ry:18%;"></span></div>
+      <div class="photo"><img src="images/gallery2.jpg" alt="2"><span class="blur-spot" style="--x:50%;--y:46%;--rx:14%;--ry:18%;"></span></div>
+      <div class="photo"><img src="images/gallery3.jpg" alt="3"><span class="blur-spot" style="--x:50%;--y:46%;--rx:14%;--ry:18%;"></span></div>
+      <div class="photo"><img src="images/gallery4.jpg" alt="4"><span class="blur-spot" style="--x:50%;--y:46%;--rx:14%;--ry:18%;"></span></div>
+      <div class="photo"><img src="images/gallery5.jpg" alt="5"><span class="blur-spot" style="--x:50%;--y:46%;--rx:14%;--ry:18%;"></span></div>
+      <div class="photo"><img src="images/gallery6.jpg" alt="6"><span class="blur-spot" style="--x:50%;--y:46%;--rx:14%;--ry:18%;"></span></div>
+      <div class="photo"><img src="images/gallery7.jpg" alt="7"><span class="blur-spot" style="--x:50%;--y:46%;--rx:14%;--ry:18%;"></span></div>
+      <div class="photo"><img src="images/gallery8.jpg" alt="8"><span class="blur-spot" style="--x:50%;--y:46%;--rx:14%;--ry:18%;"></span></div>
+    </div>
+  </section>
+
+  <footer style="text-align:center;color:var(--muted);margin:30px 0 10px">© Hatchlink Jr.</footer>
 </div>
-
-
-<section id="about" class="mx-auto max-w-7xl px-4 pb-10">
-  <div class="grid md:grid-cols-2 gap-10 items-start">
-    <div class="space-y-4">
-      <h2 class="text-3xl font-extrabold">イベント概要</h2>
-      <p>テーマは <span class="font-extrabold">Speaking × Creativity × Friendship</span>！Halloween Words、クラフト、Trick or Treat、ファッションショーなど英語を“遊びながら体験”。日本語対応スタッフがいるので、初めての英語でも安心です。</p>
-      <ul class="space-y-2">
-        <li>・開催日時：2025年10月25日（土）9:30〜12:00</li>
-        <li>・会　　場：Summerhill International School（Aoba-Japan International School）</li>
-        <li>・住　　所：東京都港区元麻布2丁目13−8</li>
-        <li>・対　　象：未就学児〜小学生（英語レベル不問）</li>
-        <li>・定　　員：先着30名（要・申込）</li>
-      </ul>
-    </div>
-    <div class="card rounded-3xl p-5">
-      <h3 class="font-bold">主なアクティビティ</h3>
-      <div class="mt-4 grid grid-cols-2 gap-4 text-sm">
-        <div class="rounded-2xl p-4 bg-white border border-black/10">
-          <p class="text-lg">📚 Halloween Words</p>
-          <p class="text-slate-600 mt-1">語彙を楽しく学ぼう</p>
-        </div>
-        <div class="rounded-2xl p-4 bg-white border border-black/10">
-          <p class="text-lg">✂️ クラフト</p>
-          <p class="text-slate-600 mt-1">創造性を育む工作</p>
-        </div>
-        <div class="rounded-2xl p-4 bg-white border border-black/10">
-          <p class="text-lg">🧸 Trick or Treat</p>
-          <p class="text-slate-600 mt-1">合言葉で<strong>おもちゃ</strong>をゲット！</p>
-        </div>
-        <div class="rounded-2xl p-4 bg-white border border-black/10">
-          <p class="text-lg">👗 ファッションショー</p>
-          <p class="text-slate-600 mt-1">11:00 スタート</p>
-        </div>
-      </div>
-      <p class="mt-3 text-xs text-slate-500">＊内容は変更となる場合があります。</p>
-    </div>
-  </div>
-</section>
-
-<section id="schedule" class="border-y border-black/5 bg-white/60">
-  <div class="mx-auto max-w-7xl px-4 py-12">
-    <h2 class="text-3xl font-extrabold">タイムテーブル</h2>
-    <div class="mt-6 grid md:grid-cols-3 gap-6">
-      <div class="rounded-2xl p-5 bg-white border border-black/10">
-        <p class="text-sm text-slate-600">9:30</p>
-        <p class="font-bold">オープニング & Halloween Words</p>
-      </div>
-      <div class="rounded-2xl p-5 bg-white border border-black/10">
-        <p class="text-sm text-slate-600">10:15</p>
-        <p class="font-bold">クラフト & Trick or Treat</p>
-      </div>
-      <div class="rounded-2xl p-5 bg-white border border-black/10">
-        <p class="text-sm text-slate-600">11:00</p>
-        <p class="font-bold">ファッションショー</p>
-        <p class="text-sm text-slate-600 mt-1">表彰／クロージング 12:00</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<section id="gallery" class="px-4 py-12 mx-auto max-w-7xl">
-  <h2 class="text-3xl font-extrabold">昨年の様子</h2>
-  <div class="mt-6 grid grid-cols-2 md:grid-cols-4 gap-4">
-    <img src="images/candy.jpg" class="rounded-2xl border border-black/10 object-contain w-full h-40" />
-    <img src="images/circle.jpg" class="rounded-2xl border border-black/10 object-contain w-full h-40" />
-    <img src="images/fashion1.jpg" class="rounded-2xl border border-black/10 object-contain w-full h-40" />
-    <img src="images/fashion2.jpg" class="rounded-2xl border border-black/10 object-contain w-full h-40" />
-    <img src="images/fashion3.jpg" class="rounded-2xl border border-black/10 object-contain w-full h-40" />
-    <img src="images/fashion4.jpg" class="rounded-2xl border border-black/10 object-contain w-full h-40" />
-    <img src="images/pumpkin_2025.jpg" class="rounded-2xl border border-black/10 object-contain w-full h-40" />
-    <img src="images/fashion5.jpg" class="rounded-2xl border border-black/10 object-contain w-full h-40" />
-  </div>
-</section>
-
-
-<section id="register" class="mx-auto max-w-7xl px-4 py-12">
-  <div class="grid md:grid-cols-2 gap-10 items-start">
-    <div>
-      <h2 class="text-3xl font-extrabold">お申し込み（先着30名）</h2>
-      <p class="mt-3">申込フォーム送信後、事務局からメールでご案内をお送りします。お支払いはPayPal経由のクレジットカード決済に対応しています。</p>
-      <div class="mt-4 overflow-hidden rounded-2xl border border-black/10 bg-white">
-        <table class="w-full text-sm">
-          <thead class="bg-slate-50"><tr><th class="text-left p-3">区分</th><th class="text-left p-3">参加費（税込）</th></tr></thead>
-          <tbody>
-            <tr class="border-t"><td class="p-3">有料会員さま*2</td><td class="p-3 font-semibold">5,400円 / 名</td></tr>
-            <tr class="border-t"><td class="p-3">無料会員さま*1</td><td class="p-3 font-semibold">7,200円 / 名</td></tr>
-          </tbody>
-        </table>
-      </div>
-      <ul class="mt-3 text-xs text-slate-600 space-y-1">
-        <li>*1：申込時点で有料コース未申込（休会中を含む）のお客さま。</li>
-        <li>*2：申込時点で有料コースにお申込み中のお客さま。</li>
-        <li>お支払い期限：請求書発行日から1週間／キャンセル：決済後100％</li>
-      </ul>
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSc04sBH5gyd1LDz5-Vf_5mTWtfbJml49vXOq0wP-eHfiPYaDA/viewform" target="_blank" class="inline-block mt-6 rounded-full px-6 py-3 btn-primary font-extrabold">申し込みフォームを開く</a>
-      <p class="mt-2 text-xs">申込締切：<strong>2025年10月21日（火）</strong>／ 定員になり次第締切</p>
-    </div>
-    <div class="card rounded-3xl p-6">
-      <h3 class="font-bold">当日のご案内</h3>
-      <ul class="mt-3 space-y-2 text-sm">
-        <li>・受付でお名前をお伝えください（保護者の見学可）。</li>
-        <li>・持参物は締切後にメールでご案内します。</li>
-        <li>・イベントは英語で進行しますが、日本語サポートあり。</li>
-      </ul>
-      <details class="mt-4 rounded-xl bg-slate-50 p-3 border border-black/10">
-        <summary class="cursor-pointer font-semibold">キャンセルはできますか？</summary>
-        <p class="mt-2 text-sm">決済後のキャンセルは100％ご負担いただきます。生徒様のご都合による決済後のキャンセルや欠席につきましては、返金は致しかねますので、ご了承ください。</p>
-      </details>
-    </div>
-  </div>
-</section>
-
-<section id="venue" class="border-y border-black/5 bg-white/60">
-  <div class="mx-auto max-w-7xl px-4 py-12">
-    <h2 class="text-3xl font-extrabold">会場アクセス</h2>
-    <div class="mt-6 grid md:grid-cols-2 gap-8 items-start">
-      <div class="rounded-3xl p-6 bg-white border border-black/10">
-        <p class="font-bold">Summerhill International School</p>
-        <p class="text-sm mt-1">東京都港区元麻布2丁目13−8</p>
-        <a href="https://maps.app.goo.gl/fU6nV61ogNDmkYXw8" target="_blank" class="inline-block mt-4 rounded-full px-4 py-2 btn-accent font-extrabold">Googleマップで開く</a>
-      </div>
-      <div class="rounded-3xl overflow-hidden border border-black/10">
-        <img src="images/circle.jpg" alt="教室の雰囲気" class="w-full h-full object-contain" />
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="faq" class="mx-auto max-w-7xl px-4 py-12">
-  <h2 class="text-3xl font-extrabold">よくある質問</h2>
-  <div class="mt-6 space-y-3">
-    <details class="group rounded-2xl border border-black/10 bg-white p-4">
-      <summary class="cursor-pointer list-none flex items-center justify-between">
-        <span>英語が初めてでも大丈夫？</span>
-        <span class="transition group-open:rotate-45">＋</span>
-      </summary>
-      <p class="mt-3 text-sm text-slate-700">日本語が話せるスタッフがサポートします。安心してご参加ください。</p>
-    </details>
-    <details class="group rounded-2xl border border-black/10 bg-white p-4">
-      <summary class="cursor-pointer list-none flex items-center justify-between">
-        <span>保護者の見学は可能？</span>
-        <span class="transition group-open:rotate-45">＋</span>
-      </summary>
-      <p class="mt-3 text-sm text-slate-700">はい、見学可能です。混雑状況によって人数制限を行う場合があります。</p>
-    </details>
-  </div>
-</section>
-
-<footer class="border-t border-black/5 bg-white/80">
-  <div class="mx-auto max-w-7xl px-4 py-8 grid md:grid-cols-3 gap-6 text-sm">
-    <div>
-      <p class="font-bold">主催</p>
-      <p class="mt-1">株式会社Aoba-BBT Global（ハッチリンク事務局）</p>
-    </div>
-    <div>
-      <p class="font-bold">お問い合わせ</p>
-      <p class="mt-1">メール：<a class="underline" href="mailto:support@hatchlinkjr.com">support@hatchlinkjr.com</a></p>
-    </div>
-    <div>
-      <p class="font-bold">備考</p>
-      <p class="mt-1">写真・動画は当社サイト等で掲載する場合があります。</p>
-    </div>
-  </div>
-  <div class="text-center text-xs text-slate-500 py-6">© 2025 Hatchlink Jr.</div>
-</footer>
-
 </body>
 </html>
